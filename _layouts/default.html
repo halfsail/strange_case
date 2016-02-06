@@ -3,21 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ site.title + page.title }}</title>
+  <title>Hi there</title>
   <meta name="viewport" content="width=device-width">
-
-  <!-- syntax highlighting CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
   <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Halant:400,500' rel='stylesheet' type='text/css'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 </head>
 <body>
-  {{ content }}
+
+  <section class="flex_con">
+    <div id="left_column" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)
+    ),url({{ site.baseurl }}{{ page.featured_image }});">
+      	 <nav>
+          <ul>
+      			<li><a href="{{ site.baseurl }}/" title="Home">Halfsail</a></li>
+      			</li>/</li>
+      			<li><a href="https://github.com/halfsail" title="Projects">Projects</a></li>
+      			<li><a href="{{ site.baseurl}}/Resources/" title="Resources">Resources</a></li>
+      		</ul>
+      	</nav>
+
+
+          <div class="inner-con">
+            <h1 id="post_title">{{ page.title }}</h1>
+             {% if page.path contains '_posts' %}
+             <h3 id="post_date">{{ page.date | date_to_string }}</h3>
+            {% else %}
+            <h3 id="post_date"></h3>
+            {% endif %}
+          </div>
+
+
+
+      </div>
+      <div id="right_column">
+        <div class="container">
+            {{ content }}
+        </div>
+      </div>
+  </Section>
+
 </body>
 </html>

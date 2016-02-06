@@ -1,47 +1,26 @@
 ---
 layout: default
 ---
-<header style="background-image: url({{ site.baseurl }}{{ page.featured_image }});">
-  <div class="container post-container">
-    <a href="{{ site.baseurl }}/" class="home_button"></a>
-    <div class="inner-container">
-      <h1>{{ page.title }}</h1>
-      <ul class="meta">
-        <li>
-          <span>
-            Published
-          </span>
-          {{ page.date | date_to_string }}
-        </li>
-        <li>
-          <span>
-            Category
-          </span>
-          {{ page.categories }}
-        </li>
-      </ul>      
-    </div>
-    <ul class="pagination">
-      {% if page.previous.url %}
-        <li class="previous">
-          <a href="{{ site.baseurl }}{{ page.previous.url }}">
-            Previous
-          </a>
-        </li>
-      {% endif %}
-      {% if page.next.url %}
-      <li class="next">
-        <a href="{{ site.baseurl }}{{ page.next.url }}">
-          Next
-        </a>
-      </li>
-      {% endif %}
-    </ul>
-  </div>
-</header>
 
-<article>
-  <div class="container">
+	<!-- <div class="inner-con">
+      <h1 id="post_title">{{ page.title }}</h1>
+      <h3 id="post_date">{{ page.date | date_to_string }}</h3>
+    </div> -->
+
     {{ content }}
-  </div>
-</article>
+
+ <footer>
+      {% if page.previous.url %}
+          <a  id="back" href="{{ site.baseurl }}{{ page.previous.url }}">
+            Previous <br> {{ page.previous.title }}
+          </a>
+      {% endif %}
+
+      {% if page.next.url %}
+
+        <a id="next" href="{{ site.baseurl }}{{ page.next.url }}">
+          Next <br> {{ page.next.title }}
+        </a>
+
+      {% endif %}
+ </footer>

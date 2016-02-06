@@ -1,18 +1,19 @@
-Strange Case
+Matcha
 ============
 
-Strange Case is a simple, clean and responsive theme for Jekyll. 
+a finely ground powder of specially grown and processed green tea or a really nice
+Jekyll blog theme.
 
 
-### Demo 
+### Demo
 
 [Demo](http://thephuse.github.io/strange_case/)
 
-### Overview 
+### Overview
 
-* Fixed Sidebar with cover image
-* Minimal design 
-* Easy to configure
+* Two column layout
+* Minimal design
+* completely based on flex boxes
 * Browser support: Latest releases of Chrome, Safari, Firefox, Mobile Safari and IE 9+.
 
 ### Screenshots
@@ -26,11 +27,4 @@ Strange Case is a simple, clean and responsive theme for Jekyll.
 2. Fork or [download](https://github.com/thephuse/strange_case) this theme repo
 3. Edit the `_config.yml` file (if you make any additional changes to this file, you will need to stop and restart your command in the next step)
 4. From your command line, switch to your site directory and build using `jekyll serve`
-5. Site will be accessible by viewing http://localhost:4000/strange_case/
-
-### Download
-
-[Download](https://github.com/thephuse/strange_case)
-
-### License
-* [MIT](http://opensource.org/licenses/MIT)
+5. Site will be accessible by viewing http://localhost:4000/matcha/

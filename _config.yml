@@ -1,9 +1,16 @@
 # Site settings
-title: 'Strange Case' # Your Title
-tagline: 'Twisted tales to make you shudder' # A brief tagline for your site
+title: 'Matcha' # Your Title
+tagline: 'A Healthy Green Drink' # A brief tagline for your site
 sidebar_image: /images/cover.jpg
+resource_image: /images/color.jpg
+date: 2015-10-07 12:00:00
 
 # Build settings
 markdown: redcarpet
 highlighter: pygments
-baseurl: /strange_case # the subpath of your site, e.g. /blog/
+url: http://localhost:4000
+#baseurl: /Matcha # the subpath of your site, e.g. /blog/
+
+# Permalinks
+permalink: /:title
+relative_permalinks: true
